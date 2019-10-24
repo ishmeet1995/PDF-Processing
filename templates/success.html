@@ -1,5 +1,11 @@
 
 {% extends 'base.html' %}
 {% block body%}
-    <h1>Success</h1>
+
+{% for file in flist %}
+    <li><a href={{url_for(file)}}">file</a></li>
+
+{% endfor %}
+
+
 {% endblock %}
